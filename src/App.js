@@ -1,11 +1,11 @@
 import './App.css';
 import Slides from './components/pages/Slides/Slides';
 import Home from './components/pages/Home/Home';
-import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, Link, HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='App'>
         <h1>Hola amigos</h1>
         <nav>
@@ -17,7 +17,7 @@ function App() {
           <Route path='/slides' element={<Slides />}></Route>
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
